@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CS & DK SERVICES - Professional BOQ & Estimating, Construction Services, and 2D/3D House Plan Design. 20+ years of excellence in construction.">
+    <meta name="keywords" content="BOQ, Bill of Quantities, Construction Estimating, House Plans, 2D Design, 3D Design, Construction Services, Building Consultancy">
+    <meta name="author" content="CS & DK SERVICES">
+    <meta name="robots" content="index, follow">
+    <title>CS & DK SERVICES | BOQ & Estimating | Construction | House Plans</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">CS & DK</div>
+            <div class="loader-bar"></div>
+            <p class="loader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="logo-text">CS & DK <span>SERVICES</span></div>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#boq" class="nav-link">BOQ & Estimating</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#plans" class="nav-link">Plans</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-award"></i> 20+ Years of Excellence
+            </div>
+            <h1 class="hero-title">Precision in Planning. <span class="highlight">Excellence</span> in Construction.</h1>
+            <p class="hero-subtitle">BOQ & Estimating | Construction | House Plan Design</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="openQuoteModal()">
+                    <i class="fas fa-calculator"></i> Get a Quote
+                </button>
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-hard-hat"></i> View Projects
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-num">150+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-num">20+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-num">100+</span>
+                    <span class="stat-label">BOQs</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Building Trust Through Quality</h2>
+                <p class="section-subtitle">Two decades of excellence in construction and estimating services</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <div class="about-tabs">
+                        <button class="tab-btn active" data-tab="intro">Introduction</button>
+                        <button class="tab-btn" data-tab="mission">Mission</button>
+                        <button class="tab-btn" data-tab="vision">Vision</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="intro">
+                        <h3>Your Trusted Construction Partner</h3>
+                        <p>CS & DK SERVICES brings together expertise in construction management, quantity surveying, and architectural design. With over 20 years of industry experience, we have established ourselves as a trusted name in delivering accurate BOQs, reliable construction services, and innovative house plans.</p>
+                        <p>Our team of professional engineers and architects work collaboratively to transform your construction vision into reality through meticulous planning, transparent costing, and superior craftsmanship.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="mission">
+                        <h3>Our Mission</h3>
+                        <p>To provide exceptional construction and estimating services that exceed client expectations through precision, integrity, and innovation. We commit to delivering accurate cost estimations, quality construction, and creative design solutions that stand the test of time.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="vision">
+                        <h3>Our Vision</h3>
+                        <p>To be the leading construction and estimating firm recognized for excellence, reliability, and innovation. We envision a future where every construction project benefits from our expertise, contributing to sustainable and beautifully built environments.</p>
+                    </div>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                            <div>
+                                <h4>Accurate Cost Estimation</h4>
+                                <p>Precision in every calculation</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+                            <div>
+                                <h4>Professional Engineers</h4>
+                                <p>Certified experts at your service</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>On-time Delivery</h4>
+                                <p>Meeting deadlines consistently</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                            <div>
+                                <h4>Transparent Pricing</h4>
+                                <p>No hidden costs guaranteed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Construction Team">
+                        <div class="experience-badge">
+                            <span class="exp-num">20+</span>
+                            <span class="exp-text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-row reveal">
+                <div class="stat-box">
+                    <div class="stat-icon-box"><i class="fas fa-project-diagram"></i></div>
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon-box"><i class="fas fa-calendar-check"></i></div>
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon-box"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">BOQs Prepared</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-icon-box"><i class="fas fa-smile"></i></div>
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">% Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Comprehensive Construction Solutions</h2>
+                <p class="section-subtitle">From initial planning to final execution, we provide end-to-end construction services</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">BOQ & Estimating</h3>
+                        <p class="service-description">Accurate Bill of Quantities preparation with detailed material and labor cost analysis for informed decision-making.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Quantity Takeoff</li>
+                            <li><i class="fas fa-check"></i> Cost Analysis</li>
+                            <li><i class="fas fa-check"></i> Excel/PDF Reports</li>
+                        </ul>
+                        <a href="#boq" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon red">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Construction Services</h3>
+                        <p class="service-description">Full-spectrum construction management from foundation to finishing with quality assurance at every stage.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Residential</li>
+                            <li><i class="fas fa-check"></i> Commercial</li>
+                            <li><i class="fas fa-check"></i> Industrial</li>
+                        </ul>
+                        <a href="#projects" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">House Plan Design</h3>
+                        <p class="service-description">Innovative 2D and 3D architectural designs that blend aesthetics with functionality for modern living.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> 2D Floor Plans</li>
+                            <li><i class="fas fa-check"></i> 3D Visualization</li>
+                            <li><i class="fas fa-check"></i> Interior Design</li>
+                        </ul>
+                        <a href="#plans" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="service-card reveal">
+                    <div class="service-icon red">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Building Consultancy</h3>
+                        <p class="service-description">Expert guidance on structural design, material selection, and regulatory compliance for your projects.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Structural Advice</li>
+                            <li><i class="fas fa-check"></i> Material Selection</li>
+                            <li><i class="fas fa-check"></i> Code Compliance</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOQ Section -->
+    <section class="section boq-section" id="boq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">BOQ & Estimating</span>
+                <h2 class="section-title">Precision Cost Estimation</h2>
+                <p class="section-subtitle">Detailed quantity takeoffs and cost analysis for accurate project budgeting</p>
+            </div>
+            
+            <div class="boq-grid">
+                <div class="boq-content reveal">
+                    <h3>Professional Quantity Surveying Services</h3>
+                    <p>Our BOQ services provide comprehensive breakdowns of materials, labor, and costs required for your construction project. We ensure accuracy and transparency to help you plan your budget effectively.</p>
+                    
+                    <div class="boq-services">
+                        <div class="boq-service-item">
+                            <div class="boq-icon"><i class="fas fa-cube"></i></div>
+                            <div>
+                                <h4>Quantity Takeoff</h4>
+                                <p>Detailed measurement of all materials required for construction with precise calculations.</p>
+                            </div>
+                        </div>
+                        <div class="boq-service-item">
+                            <div class="boq-icon"><i class="fas fa-dollar-sign"></i></div>
+                            <div>
+                                <h4>Material Cost Estimation</h4>
+                                <p>Up-to-date market rates for accurate budgeting and procurement planning.</p>
+                            </div>
+                        </div>
+                        <div class="boq-service-item">
+                            <div class="boq-icon"><i class="fas fa-users"></i></div>
+                            <div>
+                                <h4>Labor Cost Analysis</h4>
+                                <p>Comprehensive labor requirements and cost projections by trade.</p>
+                            </div>
+                        </div>
+                        <div class="boq-service-item">
+                            <div class="boq-icon"><i class="fas fa-file-excel"></i></div>
+                            <div>
+                                <h4>Detailed Reports</h4>
+                                <p>Professional BOQ reports in Excel and PDF formats with full breakdown.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="boq-buttons">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download Sample BOQ
+                        </button>
+                        <button class="btn btn-outline-dark" onclick="openQuoteModal()">
+                            <i class="fas fa-calculator"></i> Request BOQ
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="boq-table-wrapper reveal">
+                    <div class="boq-table-container">
+                        <div class="table-header">
+                            <h4><i class="fas fa-table"></i> Sample BOQ Summary</h4>
+                            <span class="table-badge">Sample</span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="boq-table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Description</th>
+                                        <th>Unit</th>
+                                        <th>Qty</th>
+                                        <th>Rate ($)</th>
+                                        <th>Amount ($)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Concrete (M25)</td>
+                                        <td>m³</td>
+                                        <td>150</td>
+                                        <td>120.00</td>
+                                        <td>18,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Steel Reinforcement</td>
+                                        <td>kg</td>
+                                        <td>8,500</td>
+                                        <td>0.85</td>
+                                        <td>7,225</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Bricks (Class A)</td>
+                                        <td>pcs</td>
+                                        <td>25,000</td>
+                                        <td>0.45</td>
+                                        <td>11,250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Cement (50kg)</td>
+                                        <td>bags</td>
+                                        <td>850</td>
+                                        <td>8.50</td>
+                                        <td>7,225</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Sand (Fine)</td>
+                                        <td>m³</td>
+                                        <td>120</td>
+                                        <td>25.00</td>
+                                        <td>3,000</td>
+                                    </tr>
+                                    <tr class="total-row">
+                                        <td colspan="5"><strong>Subtotal</strong></td>
+                                        <td><strong>46,700</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-footer">
+                            <p><i class="fas fa-info-circle"></i> Sample rates shown. Actual rates vary by location and market conditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Explore our completed construction and design projects</p>
+            </div>
+            
+            <div class="filter-buttons reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="construction">Construction</button>
+                <button class="filter-btn" data-filter="design">House Design</button>
+                <button class="filter-btn" data-filter="estimation">Estimation</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-item reveal" data-category="construction">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600" alt="Commercial Building">
+                        <div class="project-category">Construction</div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Commercial Complex</h4>
+                            <p>Multi-story office building with modern facilities</p>
+                            <button class="view-project" onclick="openModal('Commercial Complex', 'A state-of-the-art multi-story commercial building featuring modern architecture, sustainable design, and premium facilities. Project value: $2.5M', 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item reveal" data-category="design">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-27bfefd0237a?w=600" alt="Luxury Villa">
+                        <div class="project-category">Design</div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Luxury Villa</h4>
+                            <p>Modern 4-bedroom residential design</p>
+                            <button class="view-project" onclick="openModal('Luxury Villa', 'Contemporary 4-bedroom villa featuring open-plan living, swimming pool, and landscaped gardens with smart home integration. Area: 450 sqm', 'https://images.unsplash.com/photo-1600596542815-27bfefd0237a?w=1200')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item reveal" data-category="estimation">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600" alt="BOQ Project">
+                        <div class="project-category">Estimation</div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>High-Rise BOQ</h4>
+                            <p>Complete estimation for 20-story building</p>
+                            <button class="view-project" onclick="openModal('High-Rise BOQ Project', 'Comprehensive Bill of Quantities for a 20-story commercial high-rise including structural, MEP, and finishing works. Total BOQ Value: $15M', 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item reveal" data-category="construction">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600" alt="Interior Project">
+                        <div class="project-category">Construction</div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Interior Fit-out</h4>
+                            <p>Premium office interior construction</p>
+                            <button class="view-project" onclick="openModal('Premium Interior Fit-out', 'High-end office interior construction with custom furniture, lighting design, and acoustic treatment. Area: 1,200 sqm', 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item reveal" data-category="design">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" alt="Modern Home">
+                        <div class="project-category">Design</div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Modern Residence</h4>
+                            <p>Minimalist family home design</p>
+                            <button class="view-project" onclick="openModal('Modern Minimalist Residence', 'Single-family home designed with minimalist principles, featuring energy-efficient systems and sustainable materials. Area: 280 sqm', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-item reveal" data-category="estimation">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600" alt="Industrial Estimation">
+                        <div class="project-category">Estimation</div>
+                    </div>
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Industrial Facility</h4>
+                            <p>Factory construction estimation</p>
+                            <button class="view-project" onclick="openModal('Industrial Facility Estimation', 'Detailed cost estimation for a manufacturing facility including specialized equipment foundations and utility installations. Value: $8M', 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200')">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- House Plans Section -->
+    <section class="section plans-section" id="plans">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">House Plans</span>
+                <h2 class="section-title">Architectural Design Solutions</h2>
+                <p class="section-subtitle">Custom 2D and 3D house plans tailored to your lifestyle and budget</p>
+            </div>
+            
+            <div class="plans-grid">
+                <div class="plan-card reveal">
+                    <div class="plan-badge">Popular</div>
+                    <div class="plan-image">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600" alt="Modern Home">
+                    </div>
+                    <div class="plan-content">
+                        <h3>Modern Home Plan</h3>
+                        <p>Contemporary 3-bedroom design with open living spaces and energy-efficient features.</p>
+                        <div class="plan-features">
+                            <span><i class="fas fa-bed"></i> 3 Beds</span>
+                            <span><i class="fas fa-bath"></i> 2 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 180 m²</span>
+                        </div>
+                        <div class="plan-price">From $1,500</div>
+                        <button class="btn btn-primary btn-sm" onclick="openQuoteModal()">Get Quote</button>
+                    </div>
+                </div>
+                
+                <div class="plan-card featured reveal">
+                    <div class="plan-badge premium">Premium</div>
+                    <div class="plan-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600" alt="Luxury Villa">
+                    </div>
+                    <div class="plan-content">
+                        <h3>Luxury Villa Design</h3>
+                        <p>Spacious 5-bedroom villa with pool, garden, and premium finishes throughout.</p>
+                        <div class="plan-features">
+                            <span><i class="fas fa-bed"></i> 5 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler-combined"></i> 450 m²</span>
+                        </div>
+                        <div class="plan-price">From $3,500</div>
+                        <button class="btn btn-primary btn-sm" onclick="openQuoteModal()">Get Quote</button>
+                    </div>
+                </div>
+                
+                <div class="plan-card reveal">
+                    <div class="plan-badge budget">Budget</div>
+                    <div class="plan-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600" alt="Budget Home">
+                    </div>
+                    <div class="plan-content">
+                        <h3>Compact Family Home</h3>
+                        <p>Efficient 2-bedroom design maximizing space without compromising comfort.</p>
+                        <div class="plan-features">
+                            <span><i class="fas fa-bed"></i> 2 Beds</span>
+                            <span><i class="fas fa-bath"></i> 1 Bath</span>
+                            <span><i class="fas fa-ruler-combined"></i> 95 m²</span>
+                        </div>
+                        <div class="plan-price">From $800</div>
+                        <button class="btn btn-primary btn-sm" onclick="openQuoteModal()">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Contact Us</span>
+                <h2 class="section-title">Start Your Project Today</h2>
+                <p class="section-subtitle">Get in touch for a free consultation and quote</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Let's Build Together</h3>
+                    <p>Ready to start your construction project? Contact us for professional guidance, accurate estimates, and quality construction services.</p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office Location</h4>
+                                <p>123 Construction Avenue, Business District<br>Metropolis, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone Number</h4>
+                                <p>+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Address</h4>
+                                <p>info@csdkservices.com<br>projects@csdkservices.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Working Hours</h4>
+                                <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper reveal">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe">
+                                <span class="error-message">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com">
+                                <span class="error-message">Please enter a valid email</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Required</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="boq">BOQ & Estimating</option>
+                                    <option value="construction">Construction Services</option>
+                                    <option value="design">House Plan Design</option>
+                                    <option value="consultancy">Building Consultancy</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+                            <span class="error-message">Please enter your message</span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Google Map Placeholder -->
+            <div class="map-container reveal">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Google Map Integration</p>
+                    <span>123 Construction Avenue, Metropolis, NY 10001</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="logo-text">CS & DK <span>SERVICES</span></div>
+                    </a>
+                    <p>Your trusted partner for professional BOQ services, construction management, and architectural design. Building excellence since 2004.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#boq"><i class="fas fa-chevron-right"></i> BOQ & Estimating</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Construction</a></li>
+                        <li><a href="#plans"><i class="fas fa-chevron-right"></i> House Plans</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Consultancy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for latest updates and construction tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CS & DK SERVICES. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-top" id="scrollTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-body">
+                <span class="modal-tag">Project Details</span>
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <button class="btn btn-primary" onclick="openQuoteModal()">
+                    <i class="fas fa-calculator"></i> Request Similar Quote
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote Modal -->
+    <div class="modal quote-modal" id="quoteModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeQuoteModal()">&times;</button>
+            <div class="modal-body">
+                <div class="quote-header">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Request a Free Quote</h3>
+                    <p>Fill in your details and we'll get back to you within 24 hours.</p>
+                </div>
+                <form id="quoteForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Select Service</option>
+                            <option value="boq">BOQ & Estimating</option>
+                            <option value="construction">Construction Services</option>
+                            <option value="design">House Plan Design</option>
+                            <option value="consultancy">Building Consultancy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Project Details"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i> Submit Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
